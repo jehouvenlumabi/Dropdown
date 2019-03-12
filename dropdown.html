@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dropdown Menus</title>
+<style>
+nav
+{
+	width: 100%;
+	margin-top: 20px;
+	font-size: 30px;
+	font-family: TimesNewRoman;
+	color: white;
+}
+
+ul
+{
+	margin: 10px;
+	float: left;	
+}
+
+ul li
+{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	float: left;
+	display: inline;
+	position: relative;
+	background-color: black;
+}
+
+ul li a
+{
+	padding: 10px 50px;
+	text-decoration: none;
+	display: inline-block;
+}
+
+ul li:hover> ul
+{
+	visibility:visible;
+}
+ul ul 
+{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	visibility:hidden;
+	position:absolute;
+	width: 10px;
+}
+ul ul li ul
+{
+	top:0;
+	left: 130px;
+}
+</style>
+</head>
+<body>
+<nav>
+	<ul>
+		<li><a>1</a></li>
+		<li><a>2</a>
+			<ul>
+				<li><a>2.1</a></li>
+				<li><a>2.2</a>
+					<ul>
+						<li><a>2.2.1</a></li>
+						<li><a>2.2</a></li>
+						<li><a>2.3</a>
+							<ul>
+								<li><a>3.1</a></li>
+								<li><a>3.2</a>
+									<ul>
+										<li><a>2.1</a></li>
+										<li><a>2.2</a></li>
+										<li><a>2.3</a></li>
+									</ul>
+								</li>
+								<li><a>3.3</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li><a>2.3</a></li>
+			</ul>
+		</li>
+		<li><a>3</a></li>
+		<li><a>4</a></li>
+	</ul>
+</nav>
+</body>
+</html>
